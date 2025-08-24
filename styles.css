@@ -35,7 +35,7 @@ body {
     position: fixed;
     /* box-shadow: 0px 2px 10px; */
     /* border-radius: 10px 10px 0 0; */
-    z-index: 1;
+    z-index: 2;
 }
 .underline {
     text-decoration: underline;
@@ -53,10 +53,10 @@ body {
 .wrap { 
     top: 0;
     backdrop-filter: url(commonfilters.svg#filter);
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(2px);
     font-family: "Inter", sans-serif;
     font-size: 14px;
-    background-color: #f9f9f980;
+    background-color: #f9f9f960;
     height: 100%;
     margin-bottom: 0px;
     width: 80%;
@@ -67,6 +67,7 @@ body {
     padding: 50px;
     line-height: 2;
     z-index: 0;
+    box-shadow: 0px 5px 10px 2px #00000088;
 }
 
 #map-container{
@@ -107,3 +108,51 @@ body {
     -ms-filter: blur(2px);
     filter: blur(2px);
   }
+.bdy-img {
+    border-radius: 15px;
+    display: block;
+    width: 90%;
+    height: 50%;
+}
+#img1 {
+    
+    background: url("https://20f6207c63d0c64e7e95.cdn6.editmysite.com/uploads/b/20f6207c63d0c64e7e958b92e39a79c5b5c9dfa4b54be76523bed706b00cbd47/bisv_1663804922.jpeg") no-repeat center center;
+    background-size: cover;
+    margin-right: auto;
+    margin-left: auto;
+}
+#ldscrn {
+    display:block;
+    z-index: 99;
+    height: 100%;
+    width: 100%;
+}
+.center-txt {
+
+    width: 500px;
+    margin-top: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 100px;
+}
+.btn {
+    margin: 5px;
+}
+#navbarNavDropdown {
+    text-align: center;
+}
+
+.navbar-brand {
+    transform: scale(1) rotate(0deg);
+    transition: all 5s ease;
+}
+
+.navbar-brand:hover {
+    transform: scale(1.1) rotate(5deg);
+}
+.nav-link {
+    transform: scale(1);
+}
+.nav-link:hover {
+     transform: scale(1.05);
+}
